@@ -30,9 +30,7 @@ function AppUI() {
       <TodoList>
         {error && <TodoError error={error}/>}
         {loading && <TodoLoading/>}
-        {(!loading && !searchedTodos.length) && <TodoEmpty/>git remote add origin git@github.com:cristian-faccio/TODOs.git
-git branch -M main
-git push -u origin main}
+        {(!loading && !searchedTodos.length) && <TodoEmpty/>}
         
         {searchedTodos.map(todo => (
           <TodoItem
